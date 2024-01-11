@@ -1,5 +1,8 @@
 # Payment GateWay Service
 
+## Eureka Payment Gateway
+![Eureka-Payment](doc/Eureka-Payment.png)
+
 ## Archi
 
 ```md

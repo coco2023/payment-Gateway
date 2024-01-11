@@ -17,6 +17,10 @@ spring:
   sql:
     init:
       platform: mysql
+  thymeleaf:
+    cache: false
+  application:
+    name: PAYMENT-ALIPAY-SERVICE
 
 alipay:
   sandbox-enabled: true

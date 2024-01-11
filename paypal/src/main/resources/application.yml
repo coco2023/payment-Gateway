@@ -18,6 +18,9 @@ spring:
     init:
       platform: mysql
 
+  application:
+    name: PAYMENT-PAYPAL-SERVICE
+
 paypal:
   client:
     id: AWhLD4_pmHlrCpHJSSKobJ4nwbwy_e16mcgbtrL_M5DzBaJk9zj84QYazMoy5TB7htSmjry7_ArOE9yU

@@ -12,7 +12,17 @@
     <artifactId>common</artifactId>
     <packaging>jar</packaging>
 
+<!--    <properties>-->
+<!--        <spring-cloud.version>2021.0.3</spring-cloud.version>-->
+<!--    </properties>-->
+
     <dependencies>
+<!--        &lt;!&ndash; Spring Cloud Starter Netflix Eureka Client &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+<!--        </dependency>-->
+
         <!-- Spring Data JPA for database operations -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -67,30 +77,26 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- Add these dependencies -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <version>2.6.2</version> <!-- Use the appropriate version -->
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.13.3</version> <!-- Use the latest version available -->
-        </dependency>
-        <dependency>
-            <groupId>com.opencsv</groupId>
-            <artifactId>opencsv</artifactId>
-            <version>5.6</version> <!-- Use the latest version available -->
+            <artifactId>spring-boot-starter-cache</artifactId>
+            <version>2.7.1</version>
         </dependency>
 
     </dependencies>
+
+<!--    <dependencyManagement>-->
+<!--        <dependencies>-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-dependencies</artifactId>-->
+<!--                <version>${spring-cloud.version}</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
+<!--        </dependencies>-->
+<!--    </dependencyManagement>-->
 
     <build>
         <plugins>

@@ -1,4 +1,4 @@
-
+### PayPal
 # curl -X POST http://localhost:8081/api/paypal/transaction
 #-H "Content-Type: application/json"
 #-d '{
@@ -15,7 +15,7 @@ Content-Type: application/json
   "description": "Test transaction"
 }
 
-###
+### Stripe
 # curl -X POST http://localhost:8081/api/stripe/charge
 #-H "Content-Type: application/json"
 #-d '{
@@ -34,7 +34,7 @@ Content-Type: application/json
   "description": "Test charge"
 }
 
-###
+### AliPay
 # curl -X POST http://localhost:8081/api/alipay/transaction
 #-H "Content-Type: application/json"
 #-d '{

@@ -17,6 +17,8 @@ spring:
   sql:
     init:
       platform: mysql
+  application:
+    name: PAYMENT-STRIPE-SERVICE
 
 stripe:
   secret:
