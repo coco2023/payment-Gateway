@@ -3,6 +3,13 @@
 ## Eureka Payment Gateway
 ![Eureka-Payment](doc/Eureka-Payment.png)
 
+## Refer
+[1] https://github.com/coco2023/QuickMall-eCommerce/tree/main/3%20EcommerceBackend
+
+[2] ChatGPT
+
+[3] https://github.com/hello-java-maker/sihai-maven-ssm-alipay
+
 ## Archi
 
 ```md
