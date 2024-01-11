@@ -1,0 +1,56 @@
+
+# curl -X POST http://localhost:8081/api/paypal/transaction
+#-H "Content-Type: application/json"
+#-d '{
+#    "amount": 1000,
+#    "currency": "USD",
+#    "description": "Test transaction"
+#}'
+POST http://localhost:9011/api/paypal/transaction
+Content-Type: application/json
+
+{
+  "amount": 1000,
+  "currency": "USD",
+  "description": "Test transaction"
+}
+
+###
+# curl -X POST http://localhost:8081/api/stripe/charge
+#-H "Content-Type: application/json"
+#-d '{
+#    "amount": 2000,
+#    "currency": "USD",
+#    "source": "tok_visa", // Use a valid token for real tests
+#    "description": "Test charge"
+#}'
+POST http://localhost:9012/api/stripe/charge
+Content-Type: application/json
+
+{
+  "amount": 2000,
+  "currency": "USD",
+  "source": "tok_visa",
+  "description": "Test charge"
+}
+
+###
+# curl -X POST http://localhost:8081/api/alipay/transaction
+#-H "Content-Type: application/json"
+#-d '{
+#    "amount": "10.00",
+#    "currency": "USD",
+#    "otherDetails": "value"
+#}'
+POST http://localhost:9013/api/alipay/transaction
+Content-Type: application/json
+
+{
+  "amount": "10.00",
+  "currency": "USD",
+  "otherDetails": "value"
+}
+
+###
+
+

@@ -1,13 +1,13 @@
-package com.UmiUni.shop.paypal;
+package com.UmiUni.shop.paymentservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PayPalApplication {
+public class AliPayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PayPalApplication.class, args);
+        SpringApplication.run(AliPayApplication.class, args);
     }
 
 }

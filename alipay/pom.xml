@@ -9,7 +9,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>paypal</artifactId>
+    <artifactId>alipay</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -19,17 +19,22 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.paypal.sdk/paypal-android-sdk -->
+        <!-- https://mvnrepository.com/artifact/com.alipay.sdk/alipay-sdk-java -->
         <dependency>
-            <groupId>com.paypal.sdk</groupId>
-            <artifactId>rest-api-sdk</artifactId>
-            <version>1.14.0</version>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>4.38.183.ALL</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.paypal.sdk/checkout-sdk -->
+
         <dependency>
-            <groupId>com.paypal.sdk</groupId>
-            <artifactId>checkout-sdk</artifactId>
-            <version>1.0.3</version>
+            <groupId>com.alipay.global.sdk</groupId>
+            <artifactId>global-open-sdk-java</artifactId>
+            <version>2.0.11</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
     </dependencies>

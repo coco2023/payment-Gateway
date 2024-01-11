@@ -17,3 +17,7 @@ spring:
   sql:
     init:
       platform: mysql
+
+stripe:
+  secret:
+    key: sk_test_HNULuXYU2Y2e6HFczm6E5Nd6
