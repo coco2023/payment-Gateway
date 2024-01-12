@@ -51,6 +51,33 @@ Content-Type: application/json
   "otherDetails": "value"
 }
 
-###
+
+### PayPal Create Payment by SalesOrder
+POST http://localhost:9011/api/v1/payments/paypal/create
+Content-Type: application/json
+
+{
+  "salesOrderSn": "ORDER001",
+  "customerId": 1,
+  "supplierId": 1,
+  "customerName": "John Doe",
+  "customerEmail": "johndoe@example.com",
+  "orderDate": "2024-01-11T15:30:45",
+  "totalAmount": 1500.00,
+  "shippingAddress": "123 Main St, Anytown, AT 12345",
+  "billingAddress": "456 Secondary St, Othertown, OT 67890",
+  "orderStatus": "PENDING",
+  "paymentMethod": "PayPal",
+  "paymentProcessed": false,
+  "lastUpdated": "2024-01-11T10:00:00",
+  "expirationDate": "2024-02-11T10:00:00"
+}
+
+### Complete PayPal Payment
+POST http://localhost:9011/api/v1/payments/paypal/complete
+Content-Type: application/x-www-form-urlencoded
+
+paymentId=PAYID-MWQNGGI6BW25967JP786114D&PayerID=ExamplePayerID&SupplierId=1
+
 
 

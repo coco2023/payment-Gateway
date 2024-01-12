@@ -4,7 +4,7 @@ import com.UmiUni.shop.paymentservice.model.TransactionDetails;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PayPalServiceImpl implements PayPalService {
+public class PayPalServiceImplTest implements PayPalServiceTest {
 
     @Override
     public String createTransaction(TransactionDetails details) {

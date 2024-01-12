@@ -1,0 +1,42 @@
+package com.UmiUni.shop.paymentservice.model;
+
+import lombok.*;
+
+import javax.persistence.*;
+import java.math.BigDecimal;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Builder
+@ToString
+public class Supplier {
+    private Long supplierId;
+
+    @Column(nullable = false)
+    private String supplierName;
+
+    private String password;
+
+    private String contactInfo;
+
+    @Column(unique = true)
+    private String paypalEmail; // PayPal account email
+
+    private String paypalName; // PayPal account email
+
+    @Column(unique = true)
+    private String paypalAccessToken; // Store PayPal access token
+
+    @Column(unique = true)
+    private String paypalClientId;
+
+    @Column(length = 500, unique = true)
+    private String paypalClientSecret; // Ensure this is stored securely
+
+    private String paypalRedirectUri;
+
+    private BigDecimal balance;
+
+    private String userType;
+}

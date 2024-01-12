@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/paypal")
-public class PayPalController {
+public class PayPalControllerTest {
 
-    private final PayPalService payPalService;
+    private final PayPalServiceTest payPalService;
 
     @Autowired
-    public PayPalController(PayPalService payPalService) {
+    public PayPalControllerTest(PayPalServiceTest payPalService) {
         this.payPalService = payPalService;
     }
 
