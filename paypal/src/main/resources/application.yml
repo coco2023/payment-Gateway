@@ -29,7 +29,7 @@ prod-frontend: https://www.quickmall24.com
 # host url for local dev
 local-backend: http://localhost:9001
 local-frontend: http://localhost:3000
-local-auth-backend: https://122a-66-253-183-231.ngrok-free.app
+local-auth-backend: https://3a6c-66-253-183-231.ngrok-free.app
 
 paypal:
   client:

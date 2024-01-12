@@ -168,6 +168,7 @@ public class PayPalServiceImpl implements PayPalService {
                     .updatedAt(now)
                     .paymentMethod("PayPal")
                     .supplierId(String.valueOf(supplierId))
+                    .approvalUrl(approvalUrl)
                     .build();
             payPalPaymentRepository.save(payPalPayment);
             log.info("createPayment: " + createdPayment);
