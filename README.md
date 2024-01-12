@@ -401,5 +401,27 @@ Designing a database schema for a payment gateway service using MySQL, with a ba
 
 This schema serves as a foundational structure for your payment gateway service. It's scalable and adaptable to future requirements. You might need to adjust it based on your specific business needs and scale.
 
+# Git
+The issue you're facing suggests that the `payment-service_framework.zip` file was not successfully removed from the commit history during the rebase process. The error `fatal: pathspec 'payment-service_framework.zip' did not match any files` indicates that Git did not find the file in the current state of the repository during the rebase, which is expected if the file was added in a previous commit.
+
+Here's an alternative approach using `git filter-branch`, which is a powerful tool for rewriting history. It can be used to remove files from the entire history of a branch.
+
+1. **Remove the File from All Commits**:
+  - Run the following command to remove `payment-service_framework.zip` from all commits:
+    ```bash
+    git filter-branch --force --index-filter "git rm --cached --ignore-unmatch payment-service_framework.zip" --prune-empty --tag-name-filter cat -- --all
+    ```
+
+2. **Force Push the Changes**:
+  - After successfully removing the file from all commits, force push your changes to the remote repository:
+    ```bash
+    git push origin main --force
+    ```
+
+This command will go through your commit history and remove the specified file from all commits. The `--ignore-unmatch` flag is used to avoid errors in commits where the file doesn't exist.
+
+**Important Note**: `git filter-branch` is a very powerful command that rewrites history. It can have significant implications, especially if you're working in a shared repository. Ensure you have a backup of your repository before running this command. Also, inform any collaborators about this change, as they will need to rebase any work based on the old history.
+
+After running these commands, the large file should be removed from your history, and you should be able to push your changes to GitHub.
 
 
