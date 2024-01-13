@@ -63,7 +63,7 @@ Content-Type: application/json
   "customerName": "John Doe",
   "customerEmail": "johndoe@example.com",
   "orderDate": "2024-01-11T15:30:45",
-  "totalAmount": 1500.00,
+  "totalAmount": 1.00,
   "shippingAddress": "123 Main St, Anytown, AT 12345",
   "billingAddress": "456 Secondary St, Othertown, OT 67890",
   "orderStatus": "PENDING",
@@ -79,5 +79,28 @@ Content-Type: application/x-www-form-urlencoded
 
 paymentId=PAYID-MWQYYBY4V2961076V956944L&PayerID=ExamplePayerID&SupplierId=1
 
+### Stripe Payment
+POST http://localhost:9012/api/v1/payments/stripe/charge
+Content-Type: application/json
+
+{
+  "token": "tok_visa",
+  "salesOrder": {
+    "salesOrderSn": "ORDER00566",
+    "customerId": 1,
+    "supplierId": 1,
+    "customerName": "John Doe",
+    "customerEmail": "johndoe@example.com",
+    "orderDate": "2024-01-11T15:30:45",
+    "totalAmount": 1.00,
+    "shippingAddress": "123 Main St, Anytown, AT 12345",
+    "billingAddress": "456 Secondary St, Othertown, OT 67890",
+    "orderStatus": "PENDING",
+    "paymentMethod": "PayPal",
+    "paymentProcessed": false,
+    "lastUpdated": "2024-01-11T10:00:00",
+    "expirationDate": "2024-02-11T10:00:00"
+  }
+}
 
 

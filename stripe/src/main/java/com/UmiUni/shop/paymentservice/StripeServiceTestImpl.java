@@ -10,12 +10,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class StripeServiceImpl implements StripeService {
+public class StripeServiceTestImpl implements StripeServiceTest {
 
     @Value("${stripe.secret.key}")
     private String apiKey;
 
-    public StripeServiceImpl() {
+    public StripeServiceTestImpl() {
         // Initialize Stripe API key
         Stripe.apiKey = this.apiKey;
     }

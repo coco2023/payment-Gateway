@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/stripe")
-public class StripeController {
+public class StripeControllerTest {
 
     @Autowired
-    private StripeService stripeService;
+    private StripeServiceTest stripeService;
 
     @PostMapping("/charge")
     public String createCharge(@RequestBody ChargeRequest chargeRequest) {
