@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/payments")
+@CrossOrigin(origins = "http://localhost:3000")
 @Log4j2
 public class PaymentController {
 
@@ -28,6 +29,7 @@ public class PaymentController {
         }
     }
 
+    // http://localhost:9011/api/v1/payments/paypal/complete?paymentId=xxx&PayerID=xxx&SupplierId=1
     // Endpoint to complete a payment
     @PostMapping("/paypal/complete")
     public ResponseEntity<?> completePayment(@RequestParam("paymentId") String paymentId, @RequestParam("PayerID") String payerId, @RequestParam("SupplierId") String supplierId) {
