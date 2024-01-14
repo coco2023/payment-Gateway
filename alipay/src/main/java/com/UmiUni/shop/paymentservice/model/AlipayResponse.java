@@ -15,14 +15,16 @@ public class AlipayResponse {
 
     private String transactionId;
 
-    private String orderNumber;
+    private String salesOrderSn;
 
     private BigDecimal amount;
+
+    private String currency;
 
     private String message;
 
 
-    private String outTradeNo;
+    private String outTradeNo;  // important! UUID
 
     private String paymentUrl; // URL to redirect user for payment
 

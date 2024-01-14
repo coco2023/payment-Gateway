@@ -9,6 +9,5 @@ import java.util.Map;
 public interface AlipayService {
     public AlipayResponse createPayment(AlipayRequest alipayRequest) throws AlipayApiException;
 
-    public AlipayResponse processResponse(Map<String, String> params);
 
 }

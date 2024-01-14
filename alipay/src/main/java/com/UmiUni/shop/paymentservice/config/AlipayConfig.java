@@ -1,4 +1,4 @@
-package com.UmiUni.shop.paymentservice;
+package com.UmiUni.shop.paymentservice.config;
 
 import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;

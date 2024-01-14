@@ -13,7 +13,7 @@ public class AlipayRequest {
 
     private BigDecimal amount;
 
-    private String orderNumber;
+    private String salesOrderSn;
 
     private String currency;
 
