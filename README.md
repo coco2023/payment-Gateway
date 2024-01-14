@@ -10,6 +10,21 @@
 
 [3] https://github.com/hello-java-maker/sihai-maven-ssm-alipay
 
+[4] ChatGPT支付宝: https://chat.openai.com/share/259f0ced-2582-4bb8-a36c-32fa7ae5f894
+
+[5] 支付宝: https://opendocs.alipay.com/open/270/105899?pathHash=d57664bf
+
+[6] 支付宝: https://global.alipay.com/docs/ac/ams/oc
+
+[7] 支付宝: https://opendocs.alipay.com/open/59da99d0_alipay.trade.page.pay?scene=22&pathHash=8e24911d#%E4%B8%9A%E5%8A%A1%E5%93%8D%E5%BA%94%E5%8F%82%E6%95%B0
+
+
+## 支付宝支付页面
+![](/doc/支付宝-支付页面.png)
+![](/doc/支付宝-支付中.png)
+![](/doc/支付宝-确认付款.png)
+![](/doc/支付宝-付款成功.png)
+
 ## Archi
 
 ```md

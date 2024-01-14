@@ -13,7 +13,7 @@ public class AlipayResponse {
 
     private String transactionStatus;
 
-    private String transactionId;
+//    private String transactionId;
 
     private String salesOrderSn;
 

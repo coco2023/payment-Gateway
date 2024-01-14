@@ -112,7 +112,7 @@ Content-Type: application/json
   "orderNumber": "ORDER123456"
 }
 
-### Create Alipay Payment
+### Create Alipay Payment 2
 POST http://localhost:9013/api/alipay/create-payment
 Content-Type: application/json
 

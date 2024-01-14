@@ -21,16 +21,16 @@ public class AlipayController {
 
     // http://localhost:9013/api/alipay/create-payment
     @PostMapping("/create-payment")
-    public ResponseEntity<?> createPayment(@RequestBody AlipayRequest alipayRequest) throws AlipayApiException {
+    public ResponseEntity<AlipayResponse> createPayment(@RequestBody AlipayRequest alipayRequest) throws AlipayApiException {
         try {
             AlipayResponse alipayResponse = alipayService.createPayment(alipayRequest);
             return ResponseEntity.ok(alipayResponse);
         } catch (AlipayApiException e) {
             // Specific exception handling for Alipay API exceptions
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("error", e.getMessage()));
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body((AlipayResponse) Map.of("error", e.getMessage()));
         } catch (Exception e) {
             // General exception handling for other unexpected exceptions
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of("error", e.getMessage()));
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body((AlipayResponse) Map.of("error", e.getMessage()));
         }
     }
 
