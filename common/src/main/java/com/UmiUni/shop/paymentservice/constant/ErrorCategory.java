@@ -13,4 +13,8 @@ public enum ErrorCategory {
     PRODUCT_NOT_FOUND,
     INSUFFICIENT_STOCK,
     AMQP_ERROR,
+
+    // alipay error
+    ALIPAY_PAYMENT_PROCESSING_ERROR,
+
 }

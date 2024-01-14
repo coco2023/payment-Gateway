@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AliPayServiceImpl implements AliPayService {
+public class AliPayServiceTestImpl implements AliPayServiceTest {
 
     @Value("${alipay.api-url}")
     private String apiUrl;

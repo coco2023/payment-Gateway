@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/alipay")
-public class AliPayController {
+public class AliPayControllerTest {
 
-    private final AliPayService aliPayService;
+    private final AliPayServiceTest aliPayService;
 
     @Autowired
-    public AliPayController(AliPayService aliPayService) {
+    public AliPayControllerTest(AliPayServiceTest aliPayService) {
         this.aliPayService = aliPayService;
     }
 

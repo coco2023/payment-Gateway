@@ -103,4 +103,33 @@ Content-Type: application/json
   }
 }
 
+### Create Alipay Payment
+POST http://localhost:9013/api/alipay/create-payment
+Content-Type: application/json
 
+{
+  "amount": 3.00,
+  "orderNumber": "ORDER123456"
+}
+
+### Create Alipay Payment
+POST http://localhost:9013/api/alipay/create-payment
+Content-Type: application/json
+
+{
+  "amount": 1.00,
+  "currency": "CNY",
+  "orderNumber": "SO-0000002"
+}
+
+
+### Process Alipay Payment Response
+POST http://localhost:9013/api/alipay/process-response
+Content-Type: application/json
+
+{
+  "trade_status": "TRADE_SUCCESS",
+  "out_trade_no": "ORDER12345",
+  "total_amount": 3.00,
+  "msg": "Payment successful"
+}
