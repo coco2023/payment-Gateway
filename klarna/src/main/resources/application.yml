@@ -1,0 +1,8 @@
+server:
+  port: 9014
+
+
+klarna:
+  api-url: https://api-na.playground.klarna.com
+  create-session: https://api-na.playground.klarna.com/payments/v1/sessionsm
+  password: pwhcueUff0MmwLShJiBE9JHA==
